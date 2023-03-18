@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link href="./style.css" rel="stylesheet">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <div id="background">
+    <svg viewBox="0 0 100 200" preserveAspectRatio="none">
+      <image
+        href="./assets/colorful_background.svg" 
+        alt="background image"
+        >
+    </svg>
+  </div>
+
+  <h1 id="heading">Rock Paper Scissors</h1>
+
+  <div id="scoreboard">
+    <h2 class="title">Scoreboard</h2>
+    <div id="table">
+      <div class="row">
+        <div>
+          <img src="./assets/player.png" alt="player">
+          <h3>Player</h3>
+        </div>
+        <div>
+          <img src="./assets/computer.png" alt="computer">
+          <h3>Computer</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <img id="playerChoiceImage" src="./assets/null.jpeg" alt="None">
+          <h4 id="playerChoice"></h4>
+        </div>
+        <div>
+          <img id="computerChoiceImage" src="./assets/null.jpeg" alt="None">
+          <h4 id="computerChoice"></h4>  
+        </div>
+      </div>
+      <div class="row">
+        <h4 id="playerScore" class="score">0</h4>
+        <h4 id="computerScore" class="score">0</h4>
+      </div>
+    </div>
+  </div>
+
+  <div id="selections">
+    <button id="Rock"></button>
+    <button id="Paper"></button>
+    <button id="Scissors"></button>
+  </div>
+
+  <div id="announcer">
+    <h2 id="announcerMessage"></h2>
+  </div>
+
+  <div id="modal">
+    <h2 class="title">Game Over!</h2>
+    <h3 id="message"></h3>
+    <button id="restart"></button>
+  </div>
+
+</body>
+</html>
